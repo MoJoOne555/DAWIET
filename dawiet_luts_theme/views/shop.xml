@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <!-- ── Shop page header banner ── -->
+  <template id="shop_header" name="Dawiet Shop Header" inherit_id="website_sale.products">
+    <xpath expr="//div[hasclass('o_wsale_products_header')]" position="before">
+      <div style="
+        background: linear-gradient(to bottom, #0c0c14 0%, #05050a 100%);
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        padding: 64px 0 48px;
+        text-align: center;
+      ">
+        <p style="
+          font-family: 'Space Mono', monospace;
+          font-size: 0.65rem;
+          letter-spacing: 0.28em;
+          text-transform: uppercase;
+          color: #f0c040;
+          margin-bottom: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        ">
+          <span style="display:inline-block;width:20px;height:1px;background:#f0c040;vertical-align:middle;"></span>
+          Cinematic LUT Packs
+          <span style="display:inline-block;width:20px;height:1px;background:#f0c040;vertical-align:middle;"></span>
+        </p>
+        <h1 style="
+          font-family: 'Anton', sans-serif;
+          font-size: clamp(2.5rem, 5vw, 4.5rem);
+          letter-spacing: 0.03em;
+          color: #f4f0e8;
+          line-height: 1;
+          margin: 0;
+        ">
+          THE PACKS.<br/>
+          <span style="-webkit-text-stroke:1px rgba(244,240,232,0.2); color:transparent;">YOUR LOOK.</span>
+        </h1>
+        <p style="
+          font-family: 'Outfit', sans-serif;
+          font-size: 0.9rem;
+          color: #5a5760;
+          margin-top: 16px;
+          font-weight: 300;
+        ">
+          DaVinci Resolve · Premiere Pro · Final Cut Pro
+        </p>
+      </div>
+    </xpath>
+  </template>
+
+</odoo>

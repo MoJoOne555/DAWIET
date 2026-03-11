@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <!-- ── Checkout — add header above form ── -->
+  <template id="checkout_header" name="Dawiet Checkout Header" inherit_id="website_sale.checkout">
+    <xpath expr="//div[@id='checkout_form']" position="before">
+      <div style="
+        padding: 40px 0 32px;
+        border-bottom: 1px solid rgba(255,255,255,0.08);
+        margin-bottom: 40px;
+      ">
+        <p style="
+          font-family: 'Space Mono', monospace;
+          font-size: 0.63rem;
+          letter-spacing: 0.25em;
+          text-transform: uppercase;
+          color: #f0c040;
+          margin-bottom: 10px;
+        ">Secure Checkout</p>
+        <h2 style="
+          font-family: 'Anton', sans-serif;
+          font-size: 2.5rem;
+          letter-spacing: 0.03em;
+          color: #f4f0e8;
+          margin: 0;
+          line-height: 1;
+        ">COMPLETE YOUR ORDER.</h2>
+      </div>
+    </xpath>
+  </template>
+
+  <!-- ── Thank you / confirmation page ── -->
+  <template id="confirmation_header" name="Dawiet Order Confirmation" inherit_id="website_sale.confirmation">
+    <xpath expr="//div[@id='o_wsale_confirmation_order']" position="before">
+      <div style="
+        text-align: center;
+        padding: 64px 0 40px;
+      ">
+        <div style="
+          font-size: 2.5rem;
+          margin-bottom: 20px;
+        ">🎬</div>
+        <p style="
+          font-family: 'Space Mono', monospace;
+          font-size: 0.65rem;
+          letter-spacing: 0.25em;
+          text-transform: uppercase;
+          color: #f0c040;
+          margin-bottom: 12px;
+        ">Order Confirmed</p>
+        <h2 style="
+          font-family: 'Anton', sans-serif;
+          font-size: clamp(2rem, 4vw, 3.5rem);
+          color: #f4f0e8;
+          margin-bottom: 16px;
+          line-height: 1;
+        ">YOU'RE READY TO GRADE.</h2>
+        <p style="
+          font-family: 'Outfit', sans-serif;
+          font-size: 0.9rem;
+          color: #5a5760;
+          font-weight: 300;
+          max-width: 420px;
+          margin: 0 auto;
+          line-height: 1.6;
+        ">
+          Your LUT Pack download link has been sent to your email.
+          Check your inbox and start grading right away.
+        </p>
+      </div>
+    </xpath>
+  </template>
+
+</odoo>

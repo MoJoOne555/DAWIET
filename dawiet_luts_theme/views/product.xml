@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <!-- ── Product page — add "Works with" badge row ── -->
+  <template id="product_compatibility" name="Dawiet Product Compatibility" inherit_id="website_sale.product">
+    <xpath expr="//div[@id='product_details']" position="before">
+      <div style="
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+      ">
+        <span style="
+          font-family: 'Space Mono', monospace;
+          font-size: 0.6rem;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          background: rgba(240,192,64,0.12);
+          border: 1px solid rgba(240,192,64,0.25);
+          color: #f0c040;
+          padding: 5px 12px;
+        ">DaVinci Resolve</span>
+        <span style="
+          font-family: 'Space Mono', monospace;
+          font-size: 0.6rem;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          background: rgba(240,192,64,0.12);
+          border: 1px solid rgba(240,192,64,0.25);
+          color: #f0c040;
+          padding: 5px 12px;
+        ">Premiere Pro</span>
+        <span style="
+          font-family: 'Space Mono', monospace;
+          font-size: 0.6rem;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          background: rgba(240,192,64,0.12);
+          border: 1px solid rgba(240,192,64,0.25);
+          color: #f0c040;
+          padding: 5px 12px;
+        ">Final Cut Pro</span>
+        <span style="
+          font-family: 'Space Mono', monospace;
+          font-size: 0.6rem;
+          letter-spacing: 0.15em;
+          text-transform: uppercase;
+          background: rgba(240,192,64,0.06);
+          border: 1px solid rgba(255,255,255,0.08);
+          color: #5a5760;
+          padding: 5px 12px;
+        ">Instant Download</span>
+      </div>
+    </xpath>
+  </template>
+
+  <!-- ── Product page — add creator note below add to cart ── -->
+  <template id="product_creator_note" name="Dawiet Creator Note" inherit_id="website_sale.product">
+    <xpath expr="//div[@id='add_to_cart_wrap']" position="after">
+      <div style="
+        margin-top: 20px;
+        padding: 16px 20px;
+        background: rgba(240,192,64,0.06);
+        border: 1px solid rgba(240,192,64,0.15);
+        border-left: 2px solid #f0c040;
+      ">
+        <p style="
+          font-family: 'Outfit', sans-serif;
+          font-size: 0.8rem;
+          color: #5a5760;
+          margin: 0;
+          line-height: 1.6;
+          font-weight: 300;
+        ">
+          <span style="color:#f0c040; font-family:'Space Mono',monospace; font-size:0.65rem; letter-spacing:0.1em;">✦ CREATED BY DAWIET</span><br/>
+          These LUTs are used in Dawiet's own YouTube videos and filmmaking projects.
+          Same grades. One click.
+        </p>
+      </div>
+    </xpath>
+  </template>
+
+</odoo>
