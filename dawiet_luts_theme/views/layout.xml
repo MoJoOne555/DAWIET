@@ -9,13 +9,6 @@
     </xpath>
   </template>
 
-  <!-- ── Custom navbar logo text ── -->
-  <template id="navbar_brand" name="Dawiet Navbar Brand" inherit_id="website.navbar">
-    <xpath expr="//a[hasclass('navbar-brand')]" position="replace">
-      <a class="navbar-brand" href="/" style="font-family:'Anton',sans-serif; font-size:1.4rem; letter-spacing:0.06em;">
-        <span style="color:#f0c040;">Dawiet</span> LUTs
-      </a>
-    </xpath>
-  </template>
+  <!-- Navbar brand override removed for Odoo 19 compatibility -->
 
 </odoo>
