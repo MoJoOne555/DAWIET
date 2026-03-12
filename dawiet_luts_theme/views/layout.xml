@@ -1,12 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
-  <!-- Inherit main website layout — add Google Fonts -->
-  <template id="layout" name="Dawiet LUTs Layout" inherit_id="website.layout">
-    <xpath expr="//head" position="inside">
-      <link rel="preconnect" href="https://fonts.googleapis.com"/>
-      <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Outfit:wght@300;400;500;600&amp;family=Space+Mono&amp;display=swap" rel="stylesheet"/>
-    </xpath>
-  </template>
-
+<!--  ── Inherit main website layout — add Google Fonts ──  -->
+<template id="layout" name="Dawiet LUTs Layout" inherit_id="website.layout">
+<xpath expr="//head" position="inside">
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;500;600&family=Space+Mono&display=swap" rel="stylesheet"/>
+</xpath>
+</template>
 </odoo>
