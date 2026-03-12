@@ -1,8 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<template id="layout" name="Dawiet LUTs Layout" inherit_id="website.layout">
-<xpath expr="//head" position="inside">
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;500;600&family=Space+Mono&display=swap"/>
-</xpath>
-</template>
+
+  <template id="layout" name="Dawiet LUTs Layout" inherit_id="website.layout">
+    <xpath expr="//head" position="inside">
+      <meta name="dawiet-theme" content="active"/>
+    </xpath>
+  </template>
+
 </odoo>
